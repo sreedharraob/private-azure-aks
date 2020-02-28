@@ -9,7 +9,7 @@ steps:
     Contents: '**.tf'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
   condition: always()
-- task: copy
+
 - template: / pipeline/agent.yml
 
   
