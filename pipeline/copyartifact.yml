@@ -10,5 +10,5 @@ jobs:
         TargetFolder: '$(Build.ArtifactStagingDirectory)'
         condition: always()
   - task: PublishBuildArtifacts@1
-  displayName: 'Publish Artifact: drop'
+    displayName: 'Publish Artifact: drop'
 
