@@ -1,4 +1,5 @@
-  - task: PublishBuildArtifacts@1
+steps:
+- task: PublishBuildArtifacts@1
     displayName: 'Publish Artifact: drop'
   
  
