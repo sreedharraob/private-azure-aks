@@ -1,5 +1,3 @@
-stages:
-- stage: one
   jobs:
   -job: jobone
     steps:
