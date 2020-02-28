@@ -1,1 +1,5 @@
-
+pool:
+  name: Azure Pipelines
+  vmImage: ubuntu-16.04
+steps:
+  -template: pipeline/copyartifact.yml
