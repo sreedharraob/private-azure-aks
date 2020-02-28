@@ -1,7 +1,6 @@
-  jobs:
-  -job: jobone
-    steps:
-    - task: PublishBuildArtifacts@1
-    displayName: 'Publish Artifact: drop'
+ steps:
+- script: npm install
+- script: npm test
+    
   
  
