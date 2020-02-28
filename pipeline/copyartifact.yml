@@ -10,7 +10,7 @@ steps:
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
   condition: always()
 
-- template: / pipeline/agent.yml
+- template:  pipeline/agent.yml
 
   
 
