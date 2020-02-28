@@ -1,6 +1,3 @@
-pool:
-  name: Azure Pipelines
-  vmImage: ubuntu-16.04
 steps:
 - task: CopyFiles@1
   displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
