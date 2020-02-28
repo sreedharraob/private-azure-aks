@@ -1,5 +1,9 @@
-steps:
-- task: PublishBuildArtifacts@1
+stages:
+- stage: one
+  jobs:
+  -job: jobone
+    steps:
+    - task: PublishBuildArtifacts@1
     displayName: 'Publish Artifact: drop'
   
  
