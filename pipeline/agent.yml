@@ -1,4 +1,4 @@
-
+steps:
 - task: CopyFiles@1
   displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
   inputs:
