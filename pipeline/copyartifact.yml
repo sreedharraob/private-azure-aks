@@ -4,5 +4,14 @@ jobs:
     vmImage: 'ubuntu-16.04'
   steps:
   - template: / pipeline/agent.yml 
+  - task: CopyFiles@1
+    displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
+    inputs:
+        SourceFolder: 'kuebernetes_Azure'
+        Contents: '**.tf'
+        TargetFolder: '$(Build.ArtifactStagingDirectory)'
+        condition: always()
+   - task: PublishBuildArtifacts@1
+     displayName: 'Publish Artifact: drop'
   
 
