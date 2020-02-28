@@ -1,4 +1,4 @@
- pool:
+pool:
   name: Azure Pipelines
   vmImage: ubuntu-16.04
 steps:
@@ -9,5 +9,6 @@ steps:
     Contents: '**.tf'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
   condition: always()
+
 - task: PublishBuildArtifacts@1
-    displayName: 'Publish Artifact: drop'
+  displayName: 'Publish Artifact: drop'
