@@ -2,6 +2,7 @@ jobs:
 - job: Linux
   steps:
   - template: / pipeline/agent.yml 
+  steps:
   - task: CopyFiles@1
     displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
     inputs:
