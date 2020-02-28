@@ -1,3 +1,4 @@
-
-    vmImage: 'ubuntu-16.04'
+ -job:
+  pool:
+  vmImage: 'ubuntu-16.04'
  
