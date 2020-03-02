@@ -5,8 +5,8 @@ resource "random_integer" "ri" {
 
 resource "azurerm_cosmosdb_account" "db" {
   name                = "tfex-cosmos-db-${random_integer.ri.result}"
-  location            = UK south
-  resource_group_name = azurerm_resource_group.rg.name
+  location            = "UK SOUTH"
+  resource_group_name = "demoVani"
   offer_type          = "Standard"
   kind                = "GlobalDocumentDB"
 
@@ -19,13 +19,13 @@ resource "azurerm_cosmosdb_account" "db" {
   }
 
   geo_location {
-    location          = var.failover_location
+    location          = "UK South"
     failover_priority = 1
   }
 
   geo_location {
     prefix            = "tfex-cosmos-db-${random_integer.ri.result}-customid"
-    location          = azurerm_resource_group.rg.location
+    location          = "UK SOUTH"
     failover_priority = 0
   }
 }
