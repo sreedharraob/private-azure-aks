@@ -2,8 +2,8 @@ steps:
 - task: CopyFiles@1
   displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
   inputs:
-    SourceFolder: 'private-azure-aks'
-    Contents: '**.tf'
+    SourceFolder: 'kuebernetes_Azure'
+    
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
   condition: always()
 
