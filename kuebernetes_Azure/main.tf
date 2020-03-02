@@ -5,4 +5,4 @@ provider "azurerm" {
 terraform {
     backend "azurerm" {}
 }
-© 2020 GitHub, Inc.
+
