@@ -10,6 +10,4 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
   
-  module 'azurerm_kubernetes_cluster' {
-  source: '../private-azure-aks/kuebernetes_Azure/k8/'
-  }
+ 
