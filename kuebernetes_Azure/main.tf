@@ -6,5 +6,5 @@ terraform {
     backend "azurerm" {}
 }
 module "azurerm_kubernetes_cluster" {
-  source = "private-azure-aks/kuebernetes_Azure/k8/k8s.tf"
+  source = "/private-azure-aks/kuebernetes_Azure/k8/k8s.tf"
 }
