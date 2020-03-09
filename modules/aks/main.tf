@@ -1,3 +1,10 @@
+provider "azurerm" {
+    version = "~>1.5"
+}
+
+terraform {
+    backend "azurerm" {}
+}
 resource "azurerm_kubernetes_cluster" "k8s" {
   name                = "democluster"
   location            = "UK SOUTH"
