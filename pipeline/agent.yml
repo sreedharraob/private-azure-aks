@@ -2,7 +2,7 @@ steps:
 - task: CopyFiles@1
   displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
   inputs:
-    SourceFolder: 'kuebernetes_Azure'
+    SourceFolder: 'modules'
     
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
   condition: always()
