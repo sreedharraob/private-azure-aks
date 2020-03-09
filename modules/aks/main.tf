@@ -19,6 +19,3 @@ resource "azurerm_kubernetes_cluster" "k8s" {
     }
 
 }
-module "azurerm_cosmosdb_account" {
-  source = "../../../kuebernetes_Azure/cosmos/cos.tf"
-}
